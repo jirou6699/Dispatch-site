@@ -1,0 +1,62 @@
+.Job-staff {
+  display: flex;
+  background-color: gold;
+  &__img {
+    width: 110px;
+    height: 120px;
+  }
+  &__message{}
+}
+
+.Chat-wrapper {
+  background-color: goldenrod;
+  &__title {}
+  &__list {
+    padding: 15px;
+    background-color: gray;
+    &--text {
+      width: 100%;
+      height: 100px;
+      background-color: ghostwhite;
+    }
+  }
+  .Chat-box {
+    background-color: honeydew;
+    &__text {
+      margin: 20px 0;
+      width: 100%;
+      height: 100px;
+    }
+    .Review-button {
+      text-align: center;
+    }
+  }
+  &__down {
+    text-align: center;
+    &--image {
+      width: 200px;
+      height: 50px;
+    }
+  }
+}
+
+.Form-wrapper {
+  background-color: khaki;
+  .Form-item {
+    display: flex;
+    padding: 0 30px;
+    &__left{
+      width: 30%;
+      background-color: lightblue;
+    }
+    &__right{
+      width: 70%;
+      &--text {
+      width: 100%;
+      }
+    }
+  }
+  .Form-button {
+    text-align: center;
+  }
+}
