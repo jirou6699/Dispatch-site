@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title DispatchSite
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+  .Footer
+    .Footer-logo
+      COMPANY LOGO
+    .Footer-right
+      = image_tag 'image.png', class: 'Footer-right__img'
+      .Footer-right__text
+        企業担当者はこちら
+      .Footer-right__signup
+        Sign Up
+  = yield
+  .Header

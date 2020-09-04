@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get 'chats/index'
+  root 'tops#index'
+  resources :tops, only: [:show, :new, :create]
+  resources :chats, only: [:index, :create]
 end

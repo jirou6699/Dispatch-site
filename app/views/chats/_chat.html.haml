@@ -1,0 +1,44 @@
+.Job-staff
+  = image_tag 'image.png', class: 'Job-staff__img'
+  .Job-staff__message
+    私にお任せください！
+
+.Chat-wrapper
+  .Chat-wrapper__title
+    質問してね！
+  .Chat-wrapper__list
+    .Chat-wrapper__list--text
+      つつつつううううううううううううううううううう
+    .Chat-box
+      = form_with url: "#" do |form|
+        = form.text_area :text, maxlength: 250, class: 'Chat-box__text', placeholder: 'ここに文章を入力してください'
+        .Review-button
+          = form.submit '送信する'
+
+.Chat-wrapper__down
+  = image_tag 'image.png', class: 'Chat-wrapper__down--image'
+
+.Form-wrapper
+  = form_with url: "#" do |form|
+    .Form-item
+      .Form-item__left
+        お名前
+      .Form-item__right
+        = form.text_field :text, maxlength: 20, class: 'Form-item__right--text', placeholder: 'ここに文章を入力してください'
+    .Form-item
+      .Form-item__left
+        電話番号
+      .Form-item__right
+        = form.text_field :text, maxlength: 20, class: 'Form-item__right--text', placeholder: 'ここに文章を入力してください'
+    .Form-item
+      .Form-item__left
+        email
+      .Form-item__right
+        = form.email_field :text, maxlength: 30, class: 'Form-item__right--text', placeholder: 'ここに文章を入力してください'
+    .Form-item
+      .Form-item__left
+        メッセージ
+      .Form-item__right
+        = form.text_area :text, maxlength: 250, class: 'Form-item__right--text', placeholder: 'ここに文章を入力してください'
+    .Form-button
+      = form.submit '送信する'
