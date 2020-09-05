@@ -13,7 +13,7 @@
       COMPANY LOGO
     .Footer-right
       = image_tag 'image.png', class: 'Footer-right__img'
-      .Footer-right__text
+      = link_to admins_path, class: "Footer-right__text" do
         企業担当者はこちら
       .Footer-right__signup
         Sign Up
