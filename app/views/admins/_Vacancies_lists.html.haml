@@ -1,7 +1,10 @@
-.Wrapper
-  .Title-wrapper
-    求人情報
-  .Job-wrapper
+.Job-new
+  = link_to new_admin_path, class: "Job-new__title" do
+    新規案件
+.Message-wrapper
+  .Message-title
+    仕事内容一覧
+  .Search-box
     = form_with url: "#" do |form|
       .Upper-contents
         .User-contents__title
