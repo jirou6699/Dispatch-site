@@ -2,10 +2,11 @@
   .Title-wrapper
     求人情報
   .Job-wrapper
-    = form_with url: "#" do |form|
+    = form_with model: job, url:admins_path, html: {class: "job-wrapper"}, local: true do |form|
       .Upper-contents
         .User-contents__title
           【仕事のキャッチコピーを入力】       
+
         = form.text_field :text, maxlength: 64, class: 'Upper-contents__name', placeholder: 'ここに文章を入力してください'      
       .Image-contents
         .Image-contents__post
@@ -103,4 +104,3 @@
             .Pr-box__text
               引継ぎしっかり
       .Button-wrapper
-        = form.submit '掲載する', class: 'Button-wrapper__button'
